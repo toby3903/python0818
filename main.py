@@ -31,5 +31,6 @@ def home():
         f = (category, length)
         fill.append(f)
     return render_template("index.html", cat=fill)
-if _name_ == "_main_":
+  
+if __name__ == "__main__":
   app.run(debug=True, host="0.0.0.0", port="3000")
